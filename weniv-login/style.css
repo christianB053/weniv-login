@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Reset */
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Design */
+
+body {
+  font-family: "SpoqaHanSansNeo-Regular";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.login {
+  margin: 300px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 19px 16px 18px;
+}
+
+.login::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.login h2 {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.login-txt {
+  margin-bottom: 16px;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #711bff;
+  border-style: none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  padding: 10px 0px;
+  margin-bottom: 17px;
+}
+
+.login-btn img {
+  margin-right: 4px;
+}
+
+.lock,
+.user {
+  color: #767676;
+}
+
+.lock img,
+.user img {
+  vertical-align: top;
+}
+
+.lock-img,
+.user-img,
+.lock span:first-child,
+.lock span:nth-child(2) {
+  margin-right: 4px;
+}
+
+.lock {
+  float: left;
+}
+
+.user {
+  float: right;
+}
