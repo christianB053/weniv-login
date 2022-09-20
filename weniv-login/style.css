@@ -12,6 +12,10 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Design */
 
 body {
@@ -21,8 +25,8 @@ body {
 }
 
 .login {
-  margin: 300px;
-  background: #ffffff;
+  margin: 100px auto;
+  width: 350px;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
   padding: 19px 16px 18px;
@@ -35,6 +39,8 @@ body {
 }
 
 .login h2 {
+  position: absolute;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -45,44 +51,55 @@ body {
   margin-bottom: 16px;
 }
 
-.login-btn {
-  width: 100%;
+.login-link {
+  display: block;
   background-color: #711bff;
-  border-style: none;
   border-radius: 4px;
   text-align: center;
   font-weight: 500;
-  font-size: 12px;
   color: #ffffff;
-  padding: 10px 0px;
+  padding: 12px;
   margin-bottom: 17px;
 }
 
-.login-btn img {
-  margin-right: 4px;
+.logo-img {
+  width: 64px;
+  height: 12px;
+  margin-right: 3px;
 }
 
-.lock,
-.user {
-  color: #767676;
-}
-
-.lock img,
-.user img {
-  vertical-align: top;
-}
-
-.lock-img,
-.user-img,
-.lock span:first-child,
-.lock span:nth-child(2) {
-  margin-right: 4px;
-}
-
-.lock {
+.find {
   float: left;
 }
 
-.user {
+.join {
   float: right;
+}
+
+.find * {
+  float: left;
+}
+
+.join * {
+  float: left;
+}
+
+.lock-img, .user-img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.id-link, .pw-link, .join-link {
+  color: #767676;
+}
+
+.id-link::after {
+  content: " ";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: #767676;
+  margin: 0 4px;
+  vertical-align: -1px;
 }
